@@ -4,7 +4,7 @@
 
 Welcome to the Netflix Clone project utilizing the TDMB API! This project aims to replicate the popular streaming service's user interface while integrating features like language options, responsive design, and dynamic content updates.
 
-Check out the live demo [here](https://65ccc9a70153791285a01f4b--mellifluous-paprenjak-11c836.netlify.app/).
+Check out the live demo [here](https://serene-kashata-1d8746.netlify.app/).
 
 ## Sample UI
 
