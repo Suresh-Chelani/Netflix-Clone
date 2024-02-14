@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone By Suresh</title>
+    <link rel="icon" href="assets/images/Netflix-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="nav">
+                <div class="svg">
+                    <img src="assets/images/netflix-logo-drawing-png-19.png" alt="svg-netflix">
+                </div>
+                
+                <div class="button language-selector">
+                        <button class = "bst">
+                            <select class = "bt1 languageSelector" id = "btn"onchange="changeLanguage()">
+                                    <option value="en">English</option>
+                                    <option value="hi">Hindi</option>
+                            </select>
+                        </button>
+                    <button class = "bt2" id = "sn">Sign In</button>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="b1">Unlimited movies, TV shows and more</div>
+                <div class="b2">Watch anywhere. Cancel anytime.</div>
+                <div class="b3">Ready to watch? Enter your email to create or restart your membership.</div>
+
+                 <div class="button1">
+                    <input class = "bt" text = "email" placeholder="Email Address" name = "email">
+                    <button class = "ms"id = "bt1" onclick="nextPage()">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="line">
+        </div>
+        <div class="contant">
+            <div class = "sent">
+                <span class="l1" id = "a">Enjoy on your TV
+                </span>
+                <span class = "l2" id = "b">
+                    Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                </span>
+            </div>
+
+            <div class = "tv-img">
+                <img src="assets/images/tv.png" alt="">
+                <video autoplay playinline muted loop src="assets/videos/video-tv.m4v"></video>
+            </div>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="line">
+        </div>
+        <div class="contant">
+            <div class = "sent">
+                <span class="l1" id = "c">Download your shows to watch offline
+                </span>
+                <span class = "l2" id = "d">
+                    Save your favourites easily and always have something to watch.
+                </span>
+            </div>
+            <div class = "tv-img">
+                <img src="assets/images/mobile-0819.jpg" alt="">
+                <div class = "cls bx">
+                    <div class="im">
+                        <img src="assets/images/stranger.png" alt="">
+                    </div>
+
+                    <div class = "lnt">
+                        <span id = "link1">Stranger Things</span>
+                        <span id = "lint">Downloading...</span>
+                    </div>
+
+                    <div class="sg">
+                        <img src="assets/images/download.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="line">
+        </div>
+        <div class="contant">
+            <div class = "tv-img">
+                <img src="assets/images/moitor.png" alt="">
+                <video class = "tv-video"autoplay playinline muted loop src="assets/videos/video-device.m4v"></video>
+            </div>
+            <div class = "sent">
+                <span class="l1" id = "e">Watch everywhere
+                </span>
+                <span class = "l2" id = "f">
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="line">
+        </div>
+        <div class="contant">
+            <div class = "tv-img">
+                <img src="assets/images/child.png" alt="">
+            </div>
+
+            <div class = "sent">
+                <span class="l1" id = "g">Create profiles for kids
+                </span>
+                <span class = "l2" id = "h">
+                    Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+                </span>
+            </div>
+        </div>     
+    </div>
+    <div class="cont2">
+        <div class="line cp"></div>
+        <div class="Questions">
+          <p id = "i">Frequently Asked Questions</p>
+        </div>
+    
+        <div class="qeust">
+          <div class="q" id = "a1">
+            What is Netflix?
+            <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </div>
+          <div class="q" id = "b1">
+            How much does Netflix cost?
+            <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </div>
+          <div class="q" id = "c1">
+            Where can I watch?
+            <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </div>
+          <div class="q" id = "d1">
+            How do I cancel?
+             <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </div>
+          <div class="q" id = "e1">
+            What can I watch on Netflix?
+            <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </div>
+          <div class="q" id = "f1">
+            What can I watch on Netflix?
+            <svg class="cross-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 4V20M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div id = "sp">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div class="button1">
+              <input class = "bt" id = "mp" text = "email" placeholder="Email Address" name = "email">
+              <button id = "bt1" class = "fm">Get Started &gt;</button>
+          </div>
+        <div class="line tak"></div>
+      </div>
+    <div class="foot">
+        <div class="foot-item">
+            <a href="">Questions? Call 000-800-100-8343</a>
+            <a href="faq">FAQ</a>
+            <a href="faq">Investor Relations</a>
+            <a href="faq">Privacy</a>
+            <button class = "bt1">
+                <select class = "bt1 btn" onchange="changeLanguage()" >
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                </select>
+            </button>
+            <a href="faq">Speed Test</a>
+        </div>
+        <div class="foot-item">
+            <a href="faq">Help Centre</a>
+            <a href="faq">Jobs</a>
+            <a href="faq">Cookie Preferences</a>
+            <a href="faq">Legal Notices</a>
+            <a href="faq">Netflix India</a>
+            <a href="faq">Redriect</a>
+        </div>
+        <div class="foot-item">
+            <a href="faq">contact</a>
+            <a href="faq">Account</a>
+            <a href="faq">Ways to Watch</a>
+            <a href="faq">Corporate Information</a>
+            <a href="faq">Only on Netflix</a>
+            <a href="faq">Help Centre</a>
+        </div>
+        <div class="foot-item">
+            <a href="faq">Media Centre</a>
+            <a href="faq">Terms of Use</a>
+            <a href="faq">Contact Us</a>
+            <a href="faq">Redriect</a>
+            <a href="faq">Redriect</a>
+            <a href="faq">Redriect</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>

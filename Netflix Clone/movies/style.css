@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #181818;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #737373; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(44, 44, 44);
+}
+
+.left {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.nav {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+.list a {
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  transition: all 30ms ease;
+}
+.list a:hover {
+  color: #b1afaf;
+}
+.neflix-icon {
+  margin-left: 30px;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  width: 120px;
+  height: 50px;
+  color: red;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  column-gap: 30px;
+  margin-right: 25px;
+}
+.right svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+#banner {
+  background-size: cover;
+  width: 100vw;
+  height: 76vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+
+}
+
+#main {
+  background-size: cover;
+   width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  opacity: 90%;
+}
+.show {
+  margin-top: -1%;
+  background-color: #181818;
+  width: 100vw;
+  height: 20px;
+  opacity: 70%;
+  box-shadow: 10px -10px 10px 10px #181818;
+}
+.foot {
+  width: 100vw;
+}
+
+
+#banner {
+  color: #fff; 
+  padding: 20px;
+}
+
+.banner-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#title {
+  font-size: 36px;
+  text-align: start;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: bold; 
+  color: whitesmoke; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+#dist {
+  margin-left: 12px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+}
+
+.button button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: red; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button button:hover {
+  background-color: darkred; 
+}
+
+h1 {
+  margin: 9px;
+  color: white;
+}
+
+.foot h1 {
+  margin-top: 30px;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 24px;
+}
+.movie-container1,
+.movie-container2,
+.movie-container3,
+.movie-container4,
+.movie-container5,
+.movie-container6,
+.movie-container7,
+.movie-container8,
+.movie-container9 {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%; /* Adjust width as needed */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer/Edge */
+  padding: 24px;
+}
+.movie-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.movie-item button {
+  border-radius: 9px;
+  margin: 10px;
+  padding: 5px;
+  background-color: #737373;
+  border: 1px solid white;
+  color: white;
+  opacity: 90%;
+}
+.movie-item button:hover {
+  opacity: 50%;
+  box-shadow: 0px 5px 10px 10px black;
+}
+.movie-item img {
+  width: 155px;
+  height: 200px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.movie-item img:hover {
+  transform: scale(1.1);
+}
+
+.movie-description {
+  text-align: center;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.movie-item:hover .movie-description {
+  display: block;
+}
+.foot1 {
+  background-color: #181818;
+  width: 100vw;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 88px;
+  margin-bottom: 40px;
+}
+.foot-item a {
+  text-decoration: none;
+  color: #737373;
+}
+.foot-item a:hover {
+  text-decoration: underline;
+}
+.foot-item {
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  row-gap: 30px;
+}
+
+@media screen and (max-width: 1011px) {
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 962px) {
+  #main {
+    height: 50vh;
+  }
+
+  #banner {
+    width: 100vw;
+    height: 73vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+  }
+
+  .banner-cont p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 583px) {
+  #main {
+    height: 35vh;
+  }
+  .movie-description {
+    font-size: 15px;
+  }
+  .movie-item img {
+    width: 120px;
+    height: 145px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .movie-item button {
+    padding: 3px;
+    border-radius: 5px;
+  }
+  #banner {
+    width: 100vw;
+    height: 62vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-cont {
+    display: flex;
+    margin-bottom: 76px;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-cont .button .fa {
+    font-size: 13px;
+  }
+  .button button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .banner-cont #title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .foot h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .nav {
+    height: 50px;
+  }
+  .nav .left .neflix-icon {
+    width: 84px;
+    height: 56px;
+    margin: 0;
+  }
+  #movie-container,
+  #movie-container1,
+  #movie-container2,
+  #movie-container3,
+  #movie-container4 {
+    padding: 14px;
+  }
+}
