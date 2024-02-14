@@ -46,7 +46,7 @@ Contributions to the Netflix Clone project are welcome! If you have any ideas fo
 
 ## Credits
 
-This project was created by (Suresh Chelani) and inspired by the design and functionality of Netflix. Special thanks to TDMB for providing access to their API.
+I inspired by the design and functionality of Netflix. Special thanks to TDMB for providing access to their API.
 
 ## License
 
